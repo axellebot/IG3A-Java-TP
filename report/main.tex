@@ -44,11 +44,11 @@
 
 \documentclass[12pt,a4paper]{book} % Default font size and left-justified equations
 
+%----------------------------------------------------------------------------------------
+
 \input{structure} % Insert the stucture.tex file which contains the majority of the structure behind the template
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -60,7 +60,7 @@
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{./Pictures/background}};
 \draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Java\\[15pt] % Book title
 {\Large Travaux Pratiques}\\[20pt] % Subtitle
-{\huge Axel LE BOT}}}; % Author name
+{\huge Axel LE BOT | Mohamed TRAORE}}}; % Author name
 \end{tikzpicture}
 \vfill
 \endgroup
@@ -93,47 +93,28 @@
 
 \pagestyle{fancy} % Print headers again
 
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF FIGURES
+%----------------------------------------------------------------------------------------
+
+\chapterimage{./Pictures/cover-table_of_contents} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\listoffigures % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
 %----------------------------------------------------------------------------------------
 %	PART ONE
 %----------------------------------------------------------------------------------------
 
 \part{Java}
 
-%\input{}
-
-%----------------------------------------------------------------------------------------
-
-\part{Autres}
-
-\section{Figure}\index{Figure}
-
-\begin{figure}[h]
-\centering\includegraphics[scale=0.5]{./Pictures/placeholder}
-\caption{Figure caption}
-\end{figure}
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-\chapter*{Bibliographie}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}}
-\section*{Livres}
-\addcontentsline{toc}{section}{Books}
-\printbibliography[heading=bibempty,type=book]
-\section*{Articles}
-\addcontentsline{toc}{section}{Articles}
-\printbibliography[heading=bibempty,type=article]
-
-%----------------------------------------------------------------------------------------
-%	INDEX
-%----------------------------------------------------------------------------------------
-
-\cleardoublepage
-\phantomsection
-\setlength{\columnsep}{0.75cm}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
-\printindex
+\input{./TP1/tp1.tex}
 
 %----------------------------------------------------------------------------------------
 
