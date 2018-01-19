@@ -1,4 +1,5 @@
 # Report
+The report have been written with latex.
 
 ## Generate pdf
 ```shell
@@ -6,14 +7,8 @@
 ```
 
 ## Required
-- Minted :
 ```shell
-apt install texlive-latex-extra
-```
-
-- Biber :
-```shell
-apt install texlive-bibtex-extra texlive-lang-french
+apt install texlive-latex-extra texlive-bibtex-extra texlive-lang-french python-pygments
 ```
 
 ## Sources

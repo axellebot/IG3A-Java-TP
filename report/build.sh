@@ -8,5 +8,5 @@ makeindex "./$OUTPUT_DIRECTORY/$FILE_NAME_INPUT.idx" -s "./StyleInd.ist"
 biber -aux-directory=$OUTPUT_DIRECTORY main
 pdflatex -output-directory=$OUTPUT_DIRECTORY --shell-escape $FILE_NAME_INPUT
 
-# Cleaning
+echo "Moving pdf ..."
 mv "./$OUTPUT_DIRECTORY/$FILE_NAME_INPUT.pdf" "./$FILE_NAME_INPUT.pdf"
