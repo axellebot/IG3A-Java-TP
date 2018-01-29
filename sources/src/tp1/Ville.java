@@ -1,4 +1,4 @@
-package TP1;
+package tp1;
 
 import java.util.Objects;
 
@@ -81,6 +81,6 @@ public class Ville {
 
     @Override
     public int hashCode() {
-        return Objects.hash(nom,superficie, population);
+        return Objects.hash(nom, superficie, population);
     }
 }

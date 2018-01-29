@@ -1,4 +1,4 @@
-package TP1;
+package tp1;
 
 public class Departement {
     private Ville[] tabVilles;
