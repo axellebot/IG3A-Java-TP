@@ -57,14 +57,13 @@
 \begingroup
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
-\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{./Pictures/background}};
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{./Pictures/background.png}};
 \draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Java\\[15pt] % Book title
-{\Large Travaux Pratiques}\\[20pt] % Subtitle
-{\huge Axel LE BOT}}}; % Author name
+{\Large Compte Rendu de Travaux Pratiques}\\[20pt] % Subtitle
+{\huge Axel LE BOT }}}; % Author name
 \end{tikzpicture}
 \vfill
 \endgroup
-
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
@@ -76,6 +75,22 @@
 \noindent Copyright \copyright\ 2017-2018 Axel LE BOT \\ % Copyright notice
 
 \noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty} % No headers
+
+\chapterimage{./Pictures/cover-start}
+
+\chapter*{Introduction}\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{Introduction}}{Introduction}}
+
+\lipsum[1-2]
+
+\cleardoublepage % Forces the table of contents chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -94,46 +109,46 @@
 \pagestyle{fancy} % Print headers again
 
 %----------------------------------------------------------------------------------------
+%	TABLE OF FIGURES
+%----------------------------------------------------------------------------------------
+
+\chapterimage{./Pictures/cover-table_of_contents} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\listoffigures % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
 %	PART ONE
 %----------------------------------------------------------------------------------------
 
-\part{Java}
+\part{TP}
 
-%\input{}
-
-%----------------------------------------------------------------------------------------
-
-\part{Autres}
-
-\section{Figure}\index{Figure}
-
-\begin{figure}[h]
-\centering\includegraphics[scale=0.5]{./Pictures/placeholder}
-\caption{Figure caption}
-\end{figure}
+%\input{./TP2/tp2.tex}
+%\input{./TP3/tp3.tex}
+%\input{./TP4/tp4.tex}
+%\input{./TP5/tp5.tex}
+\input{./tp/tp1.tex}
 
 %----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
+%	CONCLUSION
 %----------------------------------------------------------------------------------------
 
-\chapter*{Bibliographie}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}}
-\section*{Livres}
-\addcontentsline{toc}{section}{Books}
-\printbibliography[heading=bibempty,type=book]
-\section*{Articles}
-\addcontentsline{toc}{section}{Articles}
-\printbibliography[heading=bibempty,type=article]
+\cleardoublepage % Forces the conclusion chapter to start on an odd page so it's on the right
 
-%----------------------------------------------------------------------------------------
-%	INDEX
-%----------------------------------------------------------------------------------------
+\pagestyle{empty}
 
-\cleardoublepage
-\phantomsection
-\setlength{\columnsep}{0.75cm}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
-\printindex
+\chapterimage{./Pictures/cover-end}
+
+\chapter*{Conclusion}\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{Conclusion}}{Conclusion}}
+
+\lipsum[1-2]
+
+\pagestyle{fancy}
 
 %----------------------------------------------------------------------------------------
 
