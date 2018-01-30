@@ -86,7 +86,21 @@
 
 \chapter*{Introduction}\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{Introduction}}{Introduction}}
 
-\lipsum[1-2]
+Ce rapport retrace mon travail sur les différentes scéances de travaux pratiques dans le cadre de l'apprentissage du langage Java. Ces Travaux Pratiques nous ont permit d'utiliser plus concretements la programmation orientée objet.
+
+Le Java est un langage orientée objet créé par Oracle et dérivant du C/C++. Il a été implémenter dans le but que le programme compiler une fois peut être lancé depuis n'importe quel envrionnement compatible Java sans recompilation, ce principe est décrit par WORE ("Write Once Run Anywhere").\\
+Les application Java sont compiler en \textit{bytecode} pouvant être lancé depuis n'importe quelle JVM (Java Virtual Machine) indépendemment de l'architecture système.
+
+Pour information ce langage est utilisé dans le SDK Android qui a valut à Google une poursuite en justice.
+
+Nous définissons ici les différentes notions de Java :
+\begin{itemize}
+  \item JDK (Java Development Kit) : Framework Java implémentant des classes de basses. Actuellement en version 9.
+  \item JRE (Java Runtime Environment) : Sert à lancer des programme Java. (contient : JVM + Java Packages Classes + Runtime Library)
+  \item JVM (Java Virtual Machine) : La machine virtuel dans lequel le programme sera lancé et gère le cycle de vie des programmes.
+\end{itemize}
+
+% Java est aussi une ile d'Indonésie d'environ 139,000 km carré, mais nous sortons ici du cadre de travail.
 
 \cleardoublepage % Forces the table of contents chapter to start on an odd page so it's on the right
 
@@ -128,11 +142,11 @@
 
 \part{TP}
 
-%\input{./TP2/tp2.tex}
-%\input{./TP3/tp3.tex}
-%\input{./TP4/tp4.tex}
-%\input{./TP5/tp5.tex}
 \input{./tp/tp1.tex}
+\input{./tp/tp2.tex}
+\input{./tp/tp3.tex}
+\input{./tp/tp4.tex}
+\input{./tp/tp5.tex}
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSION
