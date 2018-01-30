@@ -1,6 +1,6 @@
 package tp1;
 
-public class Departement {
+class Departement {
     private Ville[] tabVilles;
     private int numero;
     private String nom;
@@ -72,7 +72,7 @@ public class Departement {
 
         for (int i = 0; i < tabVilles.length; i++) {
             tmp = tabVilles[i];
-            msg += i+1 + ". " + tmp + '\n';
+            msg += i + 1 + ". " + tmp + '\n';
         }
         return msg;
 

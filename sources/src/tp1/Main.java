@@ -1,6 +1,6 @@
 package tp1;
 
-public class Main {
+class Main {
     /**
      * @param args the command line arguments
      */

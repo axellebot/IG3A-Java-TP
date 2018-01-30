@@ -2,7 +2,7 @@ package tp1;
 
 import java.util.Objects;
 
-public class Ville {
+class Ville {
     private String nom;
     private double superficie;
     private int population;
@@ -26,6 +26,11 @@ public class Ville {
         this.superficie = 0;
     }
 
+    static boolean sontIdentiques(Ville v1, Ville v2) {
+        return (v1.getNom() == v2.getNom() &&
+                v1.getSuperficie() == v2.getSuperficie() &&
+                v1.getPopulation() == v2.getPopulation());
+    }
 
     public String getNom() {
         return nom;
@@ -58,11 +63,9 @@ public class Ville {
 
     public boolean estIdentique(Ville v) {
         //return this.equals(v);
-        return (this.getNom() == v.getNom() && this.getSuperficie() == v.getSuperficie() && this.getPopulation() == v.getPopulation());
-    }
-
-    static boolean sontIdentiques(Ville v1, Ville v2) {
-        return (v1.getNom() == v2.getNom() && v1.getSuperficie() == v2.getSuperficie() && v1.getPopulation() == v2.getPopulation());
+        return (this.getNom() == v.getNom() &&
+                this.getSuperficie() == v.getSuperficie() &&
+                this.getPopulation() == v.getPopulation());
     }
 
     @Override
