@@ -26,12 +26,6 @@ class Ville {
         this.superficie = 0;
     }
 
-    static boolean sontIdentiques(Ville v1, Ville v2) {
-        return (v1.getNom() == v2.getNom() &&
-                v1.getSuperficie() == v2.getSuperficie() &&
-                v1.getPopulation() == v2.getPopulation());
-    }
-
     public String getNom() {
         return nom;
     }
@@ -66,6 +60,12 @@ class Ville {
         return (this.getNom() == v.getNom() &&
                 this.getSuperficie() == v.getSuperficie() &&
                 this.getPopulation() == v.getPopulation());
+    }
+
+    static boolean sontIdentiques(Ville v1, Ville v2) {
+        return (v1.getNom() == v2.getNom() &&
+                v1.getSuperficie() == v2.getSuperficie() &&
+                v1.getPopulation() == v2.getPopulation());
     }
 
     @Override
