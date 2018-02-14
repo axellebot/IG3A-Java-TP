@@ -14,13 +14,13 @@ class Ville {
      * @param superficie
      * @param population
      */
-    public Ville(String nom, double superficie, int population) {
+    Ville(String nom, double superficie, int population) {
         this.nom = nom;
         this.population = population;
         this.superficie = superficie;
     }
 
-    public Ville() {
+    Ville() {
         this.nom = "inconnu";
         this.population = 0;
         this.superficie = 0;

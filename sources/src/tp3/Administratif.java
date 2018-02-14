@@ -3,7 +3,7 @@ package tp3;
 class Administratif extends Personnel {
     private String fonction;
 
-    public Administratif(String nom, String prenom, int age, String fonction) {
+    Administratif(String nom, String prenom, int age, String fonction) {
         super(nom, prenom, age, "Administratif");
         this.fonction = fonction;
     }

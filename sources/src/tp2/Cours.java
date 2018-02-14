@@ -12,7 +12,7 @@ class Cours implements Comparable {
      * @param intitule
      * @param volumeHorraire
      */
-    public Cours(String code, String intitule, int volumeHorraire) {
+    Cours(String code, String intitule, int volumeHorraire) {
         code = verifyCode(code);
         this.code = code;
         this.intitule = intitule;

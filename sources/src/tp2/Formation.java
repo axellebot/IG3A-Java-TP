@@ -13,7 +13,7 @@ class Formation {
      * @param nom
      * @param code
      */
-    public Formation(String nom, String code) {
+    Formation(String nom, String code) {
         code = verifyCode(code);
         this.nom = nom;
         this.code = code;

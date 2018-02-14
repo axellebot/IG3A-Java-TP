@@ -5,13 +5,13 @@ class Personne {
     public String prenom;
     protected int age;
 
-    public Personne() {
+    Personne() {
         prenom = "Anonyme";
         nom = "Anonyme";
         age = -1;
     }
 
-    public Personne(String nom, String prenom, int age) {
+    Personne(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
