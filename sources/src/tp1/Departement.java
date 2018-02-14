@@ -13,14 +13,14 @@ class Departement {
      * @param numero
      * @param nbVilles
      */
-    public Departement(String nom, int numero, int nbVilles) {
+    Departement(String nom, int numero, int nbVilles) {
         this.nom = nom;
         this.numero = numero;
         this.nbVillesSaisies = 0;
         tabVilles = new Ville[nbVilles];
     }
 
-    void ajouterVille(Ville ville) {
+    public void ajouterVille(Ville ville) {
         if (tabVilles.length > nbVillesSaisies) {
             tabVilles[nbVillesSaisies] = ville;
             nbVillesSaisies++;

@@ -2,7 +2,7 @@ package tp3;
 
 class Execution {
 
-    public static void affichePersonnes(Personne[] personnes) {
+    private static void affichePersonnes(Personne[] personnes) {
         for (Personne p :
                 personnes) {
             System.out.println(p.toString() + '\n');

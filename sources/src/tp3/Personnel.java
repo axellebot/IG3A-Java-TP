@@ -3,7 +3,7 @@ package tp3;
 class Personnel extends Personne {
     private String service;
 
-    public Personnel(String nom, String prenom, int age, String service) {
+    Personnel(String nom, String prenom, int age, String service) {
         super(nom, prenom, age);
         this.service = service;
     }
