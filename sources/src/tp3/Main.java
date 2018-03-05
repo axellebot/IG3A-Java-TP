@@ -1,6 +1,7 @@
 package tp3;
 
-class Execution {
+class Main {
+    private static final String SEPARATOR = "------------------------------------------------------------";
 
     private static void affichePersonnes(Personne[] personnes) {
         for (Personne p :
@@ -9,6 +10,9 @@ class Execution {
         }
     }
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
 
         Etudiant
@@ -26,6 +30,7 @@ class Execution {
             p.ouMeTrouve();
         }
 
+        System.out.println(SEPARATOR);
         affichePersonnes(personnes);
 
         a1.prenom = "Axel";
@@ -37,6 +42,7 @@ class Execution {
         a2.setAge(21);
         a2.setNbAbsence(0);
 
+        System.out.println(SEPARATOR);
         affichePersonnes(personnes);
     }
 }

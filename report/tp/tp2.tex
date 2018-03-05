@@ -4,10 +4,10 @@
 
 \section{Exercice 1 : Classe Cours et tri de liste}
 \textit{L'objectif de cet exercice est de créer une classe Cours. Cette classes possèdera comme attributs, un code, un intitulé et un volume horraire. Nous implémeterons un constructeur et nous surchargerons la méthode toString.}
-\inputminted[linenos,firstline=3,lastline=61]{java}{../sources/src/tp2/Cours.java}
+\inputminted[linenos,firstline=3,lastline=63]{java}{../sources/src/tp2/Cours.java}
 
 On ajoutera la méthode \mintinline{java}{verifyCode(String code)} afin d'enlever les caractère non alpha-numérique mis par l'utilisateur lors de l'instanciation de la classe ou encore lors de la mutation de l'attibut Code.
-\inputminted[linenos,firstline=58,lastline=60]{java}{../sources/src/tp2/Cours.java}
+\inputminted[linenos,firstline=65,lastline=68]{java}{../sources/src/tp2/Cours.java}
 
 \section{Exercice 2 : Classe Formation}
 \textit{L'objectif de cet exercice est de créer une classe Formation, permettant de regrouper plusieurs cours. Cette classes possèdera comme attributs, un code, un intitulé et une liste de cours. Nous implémeterons un constructeur et nous surchargerons la méthode toString.}
@@ -17,9 +17,9 @@ On ajoutera la méthode \mintinline{java}{verifyCode(String code)} afin d'enleve
 \textit{L'objectif de cet exercice est de simuler le scénario proposé en utilisant les classes créés précédemment. Pour cela, nous devrons comprendre et utiliser les méthodes fournies par la classe ArrayList.}
 \\\\
 Je crée la classe Main suivante :
-\inputminted[linenos,firstline=9,lastline=46]{java}{../sources/src/tp2/Main.java}
+\inputminted[linenos,firstline=3,lastline=46]{java}{../sources/src/tp2/Main.java}
 
-On obtient l'exécution suivante :
+À l'éxécution on obtient l'affichage suivant :
 \begin{figure}[H]
   \centering
   \includegraphics[width=300pt]{./tp/Pictures/tp2-execute}
@@ -39,10 +39,9 @@ Ainsi nous pourront surcharger les méthodes de l'interface, ici la méthode \mi
 
 On utilisera de préférence la méthode \mintinline{java}{sort()} de l'instance plutôt que celle de la classe mère Collection, celà évitera les érreurs de type de Collection.\\
 Nous pouvons si nous le voulons créer un comparateur à la voler en passant en paramètre \mintinline{java}{new Comparator(){}}, mais nous n'en avons pas l'utiliter ici.
-\inputminted[linenos,firstline=43,lastline=43]{java}{../sources/src/tp2/Main.java}
+\inputminted[linenos,firstline=41,lastline=41]{java}{../sources/src/tp2/Main.java}
 
 \section{Synthèse personnelle}
-
 Il existe plusieurs type de collection, facilitant toutes des manipulations précise.
 \begin{itemize}
   \item ArrayList : permet à une collection d'assurer le stockage de donnés potentiellement dupliqués.

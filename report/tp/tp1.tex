@@ -4,7 +4,7 @@
 
 \section{Exercice 1 : Classe Ville}
 \textit{L'objectif de cet exercice est de créer une classe Ville possédant un nom, une superficie et une population. Un constructeur par défaut ains qu'un constructeur prenant en paramètre les trois attributs cité précedemment ainsi que les accesseurs et mutateurs de chaques attributs seront ajoutés à la classe. Nous allons également surcharger la méthode toString() afin d'afficher la description d'une Ville.}
-\inputminted[linenos,firstline=3,lastline=90]{java}{../sources/src/tp1/Ville.java}
+\inputminted[linenos,firstline=5,lastline=90]{java}{../sources/src/tp1/Ville.java}
 
 \section{Exercice 2 : Classe Departement}
 \textit{L'objectif de cet exercice est de créer une clase Département, permettant de regrouper plusieurs villes. Cette classes possèdera comme attributs, un nom, un numéro, un nombre de villes saisies et donc un tableau de Villes. Un constructeur sera ajouté à la classe ainsi qu'une méthode ajouterVille, permettant d'ajouter une Ville au tableau de Villes du Département. Nous allons également surcharger la méthode toString() afin d'afficher la description d'un département et ses villes qu'il contient.}
@@ -29,7 +29,7 @@ En effet le mot clef \mintinline{java}{static} permet de spécifier qu'un membre
 Les deux méthodes \mintinline{java}{estIdentiqueA(Ville v)} et \mintinline{java}{sontIdentiques(Ville v1, Ville v2)} permettent de comparer deux Ville.\\
 On implémente ainsi ces méthodes :
 
-\inputminted[linenos,firstline=59,lastline=70]{java}{../sources/src/tp1/Ville.java}
+\inputminted[linenos,firstline=58,lastline=69]{java}{../sources/src/tp1/Ville.java}
 
 \begin{itemize}
   \item \mintinline{java}{estIdentiqueA(Ville v)} de comparer une instance de Ville depuis une autre instance de Ville.
@@ -37,4 +37,4 @@ On implémente ainsi ces méthodes :
 \end{itemize}
 
 Nous allons faciliter la comparaison de deux instance en surchargeant la méthode \mintinline{java}{equals} ainsi que la méthode \mintinline{java}{hashCode} de la manière suivante :
-\inputminted[linenos,firstline=72,lastline=89]{java}{../sources/src/tp1/Ville.java}
+\inputminted[linenos,firstline=71,lastline=88]{java}{../sources/src/tp1/Ville.java}

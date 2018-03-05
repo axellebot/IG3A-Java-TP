@@ -1,32 +1,13 @@
 package tp4;
 
 class Main {
-    private static final String SEPARATOR = "------------------------------";
+    private static final String SEPARATOR = "------------------------------------------------------------";
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Exercice 1
         FormeGeometrique forme1, forme2;
-        forme1 = new FormeGeometrique(1.0) {
-            @Override
-            public double calculPerimetre() {
-                return 0;
-            }
-
-            @Override
-            public double calculSuperficie() {
-                return 0;
-            }
-
-            @Override
-            public String toString() {
-                return "$classAnonymous{" +
-                        "epaisseur=" + epaisseur +
-                        '}';
-            }
-        };
 
         forme1 = new Cercle(1, 3);
         forme2 = new Rectangle(1, 2, 4);
@@ -44,9 +25,11 @@ class Main {
         try {
             tab.addElement(forme1);
             tab.addElement(forme2);
+            tab.addElement(forme2);
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
-        }finally {
+        } finally {
             System.out.println(tab);
             tab.trier();
             System.out.println(tab);

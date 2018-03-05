@@ -60,10 +60,12 @@
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{./Pictures/background.png}};
 \draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Java\\[15pt] % Book title
 {\Large Compte Rendu de Travaux Pratiques}\\[20pt] % Subtitle
-{\huge Axel LE BOT }}}; % Author name
+{\huge Axel LE BOT}\\ % Author name
+{\small \href{mailto:axellebot@gmail.com}{axellebot@gmail.com}}}}; % Email
 \end{tikzpicture}
 \vfill
 \endgroup
+
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
@@ -88,11 +90,11 @@
 
 Ce rapport retrace mon travail sur les différentes scéances de travaux pratiques dans le cadre de l'apprentissage du langage Java. Ces Travaux Pratiques nous ont permit d'utiliser plus concretements la programmation orientée objet.
 
-Le Java est un langage orientée objet créé par Oracle et dérivant du C/C++. Il a été implémenter dans le but que le programme compiler une fois peut être lancé depuis n'importe quel envrionnement compatible Java sans recompilation, ce principe est décrit par WORE ("Write Once Run Anywhere").\\
+Le Java est un langage orientée objet créé par Oracle et dérivant du C/C++. Il a été implémenté dans le but que le programme compiler une fois peut être lancé depuis n'importe quel envrionnement compatible Java sans recompilation, ce principe est décrit par WORE ("Write Once Run Anywhere").\\
 Les application Java sont compiler en \textit{bytecode} pouvant être lancé depuis n'importe quelle JVM (Java Virtual Machine) indépendemment de l'architecture système.
-
-Pour information ce langage est utilisé dans le SDK Android qui a valut à Google une poursuite en justice.
-
+\\\\
+Pour information ce langage est aussi utilisé dans le SDK Android qui a valut à Google une poursuite en justice.
+\\\\
 Nous définissons ici les différentes notions de Java :
 \begin{itemize}
   \item JDK (Java Development Kit) : Framework Java implémentant des classes de basses. Actuellement en version 9.
@@ -101,8 +103,11 @@ Nous définissons ici les différentes notions de Java :
 \end{itemize}
 
 % Java est aussi une ile d'Indonésie d'environ 139,000 km carré, mais nous sortons ici du cadre de travail.
-
-NB : Les classes seront toujours déclaré en "package-private" (sans spécificateur de niveau d'accès explicite) afin de ne pas mélanger les classes entre les TPs.
+Les classes seront déclaré en "package-private" (sans spécificateur de niveau d'accès explicite) afin de ne pas mélanger les classes entre les TPs.
+\\\\
+Le rapport est entièrement rédigé en LaTeX et construit à l'aide d'un script. La totalité des exercices seront effectués sur l'IDE IntelliJ avec JDK 9. L'ensemble des codes sources sont disponible sur Github à l'adresse suivante : \href{http://github.axel.lebot.me}{github.axel.lebot.me}
+\\
+En vous souhaitant une bonne lecture.
 
 \cleardoublepage % Forces the table of contents chapter to start on an odd page so it's on the right
 
@@ -148,7 +153,6 @@ NB : Les classes seront toujours déclaré en "package-private" (sans spécifica
 \input{./tp/tp2.tex}
 \input{./tp/tp3.tex}
 \input{./tp/tp4.tex}
-\input{./tp/tp5.tex}
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSION
@@ -162,7 +166,7 @@ NB : Les classes seront toujours déclaré en "package-private" (sans spécifica
 
 \chapter*{Conclusion}\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{Conclusion}}{Conclusion}}
 
-\lipsum[1-2]
+Ces scéances de TP nous ont permis d'enrichir nos connaissance en programmation objet, d'une part en les comprenant mais aussi en les maitrisant plus facilement. Ainsi nous pouvons travailler de manière plus autonome et avoir une vision plus concrète de la programmation.
 
 \pagestyle{fancy}
 
